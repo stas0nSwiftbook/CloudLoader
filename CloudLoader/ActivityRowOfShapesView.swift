@@ -48,7 +48,7 @@ struct ActivityRowOfShapesView: View {
             ForEach(0..<Int(count)) { index in
                 item(forIndex: index, in: geometry.size)
             }
-            .offset(x: 0, y: geometry.size.height / 2)
+            .offset(x: 0, y: geometry.size.height / 2.5)
         }
         .aspectRatio(contentMode: .fit)
         .padding()
