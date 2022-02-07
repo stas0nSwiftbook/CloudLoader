@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C20F8D5127B17F7400C14293 /* CloudLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20F8D5027B17F7400C14293 /* CloudLoaderView.swift */; };
 		C2E50EC827B11F3500D61FE3 /* CloudLoaderApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E50EC727B11F3500D61FE3 /* CloudLoaderApp.swift */; };
 		C2E50ECA27B11F3500D61FE3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2E50EC927B11F3500D61FE3 /* ContentView.swift */; };
 		C2E50ECC27B11F3500D61FE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2E50ECB27B11F3500D61FE3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C20F8D5027B17F7400C14293 /* CloudLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudLoaderView.swift; sourceTree = "<group>"; };
 		C2E50EC427B11F3500D61FE3 /* CloudLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CloudLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2E50EC727B11F3500D61FE3 /* CloudLoaderApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudLoaderApp.swift; sourceTree = "<group>"; };
 		C2E50EC927B11F3500D61FE3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,6 +55,7 @@
 			children = (
 				C2E50EC727B11F3500D61FE3 /* CloudLoaderApp.swift */,
 				C2E50EC927B11F3500D61FE3 /* ContentView.swift */,
+				C20F8D5027B17F7400C14293 /* CloudLoaderView.swift */,
 				C2E50ECB27B11F3500D61FE3 /* Assets.xcassets */,
 				C2E50ECD27B11F3500D61FE3 /* Preview Content */,
 			);
@@ -138,6 +141,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2E50ECA27B11F3500D61FE3 /* ContentView.swift in Sources */,
+				C20F8D5127B17F7400C14293 /* CloudLoaderView.swift in Sources */,
 				C2E50EC827B11F3500D61FE3 /* CloudLoaderApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
