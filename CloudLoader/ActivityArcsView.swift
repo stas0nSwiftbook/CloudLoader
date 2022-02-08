@@ -12,14 +12,15 @@ struct ActivityArcsView: View {
     let count: UInt
     let width: CGFloat
     let spacing: CGFloat
-
+    
     init(animate: Binding<Bool>, count: UInt = 3, width: CGFloat = 2, spacing: CGFloat = 1) {
+        
         self._isAnimating = animate
         self.count = count
         self.width = width
         self.spacing = spacing
     }
-
+    
     var body: some View {
         GeometryReader { geometry in
             ForEach(0..<Int(count)) { index in
@@ -36,15 +37,15 @@ struct ActivityArcsView: View {
         .aspectRatio(contentMode: .fit)
         .padding()
     }
-
+    
     private func arc(forIndex index: Int, in geometrySize: CGSize) -> some View {
         Group { () -> Path in
             var path = Path()
             path.addArc(center: CGPoint(x: geometrySize.width/2, y: geometrySize.height/2),
-                     radius: geometrySize.width/2 - width/2 - CGFloat(index) * (width + spacing),
-                     startAngle: .degrees(0),
-                     endAngle: .degrees(Double(Int.random(in: 120...300))),
-                     clockwise: true)
+                        radius: geometrySize.width/2 - width/2 - CGFloat(index) * (width + spacing),
+                        startAngle: .degrees(0),
+                        endAngle: .degrees(Double(Int.random(in: 120...300))),
+                        clockwise: true)
             return path.strokedPath(.init(lineWidth: width))
         }
         .frame(width: geometrySize.width, height: geometrySize.height)

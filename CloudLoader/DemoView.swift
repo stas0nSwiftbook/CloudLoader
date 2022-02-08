@@ -12,11 +12,29 @@ struct DemoView: View {
     
     var body: some View {
         VStack {
-            ActivityArcsView(animate: $isAnimating, count: 10, width: 4, spacing: 10)
+            ActivityArcsView(
+                animate: $isAnimating,
+                count: 4,
+                width: 6,
+                spacing: 4
+            )
                 .foregroundColor(.orange)
-            ActivityRowOfShapesView(animate: $isAnimating, count: 15, spacing: 2)
+            
+            ActivityRowOfShapesView(
+                animate: $isAnimating,
+                count: 8,
+                spacing: 6
+            )
                 .foregroundColor(.blue)
-            ActivityBarsView(animate: $isAnimating, count: 10, spacing: 8, cornerRadius: 4, scaleRange: 0.5...1, opacityRange: 0...1)
+            
+            ActivityBarsView(
+                animate: $isAnimating,
+                count: 8,
+                spacing: 14,
+                cornerRadius: 4,
+                scaleRange: 0.5...1,
+                opacityRange: 0...1
+            )
                 .foregroundColor(.green)
         }
         .onAppear {
